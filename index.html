@@ -10,7 +10,10 @@
 <body>
     
     <div id="app">
-        <div id="box" @click="punch" :class="{ended:ended}"></div>
+      <!-- This First Div houses the punching bag -->
+        <div id="box">
+          <img :src="src" @click="punch" alt="">
+        </div>
 
         <div id="health" :class="color">
             <div :style="{width: health + '%'}"><span id="percent">{{health}} %</span></div>
@@ -19,13 +22,15 @@
         <div id="control">
           <button @click="reset">Reset Game</button>
         </div>
+        
         <div v-if="isEnded" id="gameOver">
-            <marquee behavior="" direction="ltr"> Game Over Dudes</marquee>
+            <marquee behavior="" direction="ltr"> You Win Dude </marquee>
         </div>
-
+        
     </div>
     <script src="vue.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>
 

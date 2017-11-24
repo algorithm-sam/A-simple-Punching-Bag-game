@@ -3,7 +3,8 @@ new Vue({
     el:'#app',
     data: {
         health:100,
-        ended:false
+        ended:false,
+        src:'images/bag.png'
     },
     methods:{
         punch:function(){
@@ -11,6 +12,7 @@ new Vue({
             if(this.health<=0){
                 this.ended=true;
                 this.health=0;
+                this.src='images/bag-burst.png';
             }
         },
         reset:function(){

@@ -1,10 +1,6 @@
 #box{
-    width: 600px;
-    height:400px;
-    padding: 50px;
+    text-align: center;
     margin:0 auto;
-    background: url('images/bag.png') center no-repeat;
-    
 }
 
 #control{
@@ -45,7 +41,7 @@
     padding:20px;
     text-transform: uppercase;
     font-weight:700;
-    color:red;
+    color:green;
 }
 .ended{
     background: url('images/bag-burst.png') center no-repeat !important;   
